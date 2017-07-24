@@ -5,13 +5,24 @@ GLLS HOME PAGE
 @section('content')
     <div class="row expanded small-collapse">
         <div class="small-12 columns text-center " id="column-content">
-            <img src="{{ asset('Overlay/Ipad/gallery-img-4-lg_2_resized.jpg') }} " alt="" style=" vertical-align: middle;" >
+
+{{--            <img src="{{ asset('Overlay/Full/gallery-img-4-lg_2_resized.jpg') }} " alt="" style="vertical-align: middle;" >--}}
+            {{--{{asset($page->imageSmall->url)}}--}}
+            {{--{{asset($page->imageMedium->url)}}--}}
+            {{--{{asset($page->image->url)}}--}}
+            {{--<img  data-interchange="[{{ asset( $page->imageSmall->url) }}, small], [{{ asset( $page->imageMedium->url) }}, medium], [{{ asset( $page->image->url) }}, large]" alt="" style="vertical-align: middle;" >--}}
         </div>
-        {{--<div class="small-12 columns text-center show-for-small-only" id="column-content">--}}
-            {{--<img src="{{ asset('Overlay/Mobile/gallery-img-4-lg_2.jpg') }} " alt="" class="hero_image" >--}}
+        <div class="small-12 columns text-center show-for-small-only" id="column-content">
+            <img src="{{ asset('Overlay/Mobile/St Barbara-Portal Exit (2) copy.jpg') }} " alt="" class="hero_image" >
+        </div>
+        <div class="small-12 columns text-center show-for-medium-only" id="column-content">
+            <img src="{{ asset('Overlay/Ipad/gallery-img-4-lg_2.jpg') }} " alt="" class="hero_image" >
+        </div>
+        {{--<div class="small-12 columns text-center " id="column-content">--}}
+            {{--<img src="{{ asset('Overlay/Full/gallery-img-4-lg_2_resized.jpg') }} " alt="" class="hero_image" >--}}
         {{--</div>--}}
-        {{--<div class="small-12 columns text-center show-for-medium-only" id="column-content">--}}
-            {{--<img src="{{ asset('Overlay/Ipad/gallery-img-4-lg_2.jpg') }} " alt="" class="hero_image" >--}}
+        {{--<div class="small-12 columns text-center " id="column-content">--}}
+            {{--<img src="{{ asset('Overlay/Full/St Barbara-Portal Exit (2) copy.jpg') }} " alt="" class="hero_image" >--}}
         {{--</div>--}}
         {{--<div class="small-12 columns text-center hide-for-small-only hide-for-medium-only" id="column-content">--}}
             {{--<img src="{{ asset('Overlay/Ipad/gallery-img-4-lg_2_lg.jpg') }} " alt="" class="hero_image" >--}}

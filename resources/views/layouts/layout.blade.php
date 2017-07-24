@@ -47,6 +47,8 @@
 <script src="{{ asset('js/vendor/jquery.js') }}"></script>
 <script src="{{ asset('js/vendor/what-input.js') }}"></script>
 <script src="{{ asset('js/vendor/foundation.js') }}"></script>
+<script src="{{ asset('js/vendor/foundation.interchange.js') }}"></script>
+
 {{--<script src="{{ asset('js/vendor/app.js') }}"></script>--}}
 
 <script> $(document).foundation();</script>

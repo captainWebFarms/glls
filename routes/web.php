@@ -16,10 +16,11 @@
 //});
 
 Route::get('/', 'PagesController@index');
-Route::get('/home', 'HomeController@index');
-Route::get('/Contact', 'ContactsController@index');
-//Route::get('/About', 'AboutsController@index');
-//Route::get('/Commercial', 'CommercialsController@index');
-Route::get('/Gallary', 'GallerysController@index');
-Route::get('/Investments', 'InvestmentsController@index');
-//Route::post('/Contact', 'ContactsController@mail' );
+Route::get('/Home', 'PagesController@index');
+Route::get('/Contact', 'PagesController@contact');
+Route::get('/Gallery', 'PagesController@gallery');
+Route::get('/News', 'PagesController@news' );
+Route::get('/Login', 'PagesController@login');
+Route::get('/Backend','PagesController@backend');
+Route::get('Distributor','PagesController@find');
+Route::get('Request','PagesController@request');
