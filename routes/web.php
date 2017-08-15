@@ -17,10 +17,19 @@
 
 Route::get('/', 'PagesController@index');
 Route::get('/Home', 'PagesController@index');
-Route::get('/Contact', 'PagesController@contact');
+Route::get('/About', 'PagesController@about');
+Route::get('/Products', 'PagesController@product');
 Route::get('/Gallery', 'PagesController@gallery');
 Route::get('/News', 'PagesController@news' );
+Route::get('/Find', 'PagesController@find' );
 Route::get('/Login', 'PagesController@login');
+Route::get('/Contact', 'PagesController@contact');
+
 Route::get('/Backend','PagesController@backend');
-Route::get('Distributor','PagesController@find');
-Route::get('Request','PagesController@request');
+Route::get('/Request','PagesController@request');
+
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

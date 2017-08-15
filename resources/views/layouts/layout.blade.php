@@ -19,28 +19,37 @@
 
 
 </head>
-<body style="color:rgb(100,100,100);">
-{{--<div class="flex-center position-ref full-height">--}}
-    {{--@include('partials.nav')--}}
-    @yield('content')
-    <div class="expanded row gblack ggreen">
-        <div class="small-6 columns ">
-            <div class="float-left ">
-                <h1>Contact</h1>
-                <p>11th floor, Tower 1, Nexteracom Building <br/>
+<body>
+<div class="row expanded small-collapse">
+    {{--<div class="small-12 columns" id="column-content">--}}
+        {{--@include('partials.nav')--}}
+        {{--<img src="{{ asset($page->imageSmall->url) }} " alt="" class="hero_image show-for-small-only" >--}}
+        {{--<img src="{{ asset($page->image->url) }} " alt="" class="show-for-large" >--}}
+        {{--<img src="{{ asset($page->imageMedium->url) }} " alt="" class="hero_image show-for-medium-only" >--}}
+        {{--<h2 class="hero_text image_top" >@yield('hero_text')</h2>--}}
+    {{--</div>--}}
+</div>
+@yield('content')
+
+
+<div class="expanded row gblack ggreen">
+    <div class="small-6 columns ">
+        <div class="float-left ">
+            <h1>Contact</h1>
+            <p>11th floor, Tower 1, Nexteracom Building <br/>
                 Ebane Cybercity, Mauritius<br/>
                 Tel: +27647526258<br/>
                 Email sales@glls.global</p>
-            </div>
-        </div>
-        <div class="small-6 columns ">
-            <div class="float-right">
-                <br/>
-                <img src="{{ asset('logo.png') }}">
-                <h1>50,000m sold</h1>
-            </div>
         </div>
     </div>
+    <div class="small-6 columns ">
+        <div class="float-right">
+            <br/>
+            <img src="{{ asset('logo.png') }}">
+            <h1>50,000m sold</h1>
+        </div>
+    </div>
+</div>
 {{--</div>--}}
 
 
