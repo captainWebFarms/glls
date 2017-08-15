@@ -17,9 +17,9 @@ class PagesController extends Controller
     }
     public function index()
     {
-        $page = $this->getTitleAndImage(1);
+        $page = $this->getTitleAndImage(3);
         $text = $this->getAllText(1);
-
+//    return $page;
         return view('welcome', compact('page', 'text'));
 
     }
