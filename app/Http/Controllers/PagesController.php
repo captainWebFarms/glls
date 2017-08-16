@@ -17,7 +17,7 @@ class PagesController extends Controller
     }
     public function index()
     {
-        $page = $this->getTitleAndImage(3);
+        $page = $this->getTitleAndImage(1);
         $text = $this->getAllText(1);
 //    return $page;
         return view('welcome', compact('page', 'text'));
@@ -26,14 +26,14 @@ class PagesController extends Controller
 
     public function about()
     {
-        $page = $this->getTitleAndImage(2);
+        $page = $this->getTitleAndImage(3);
 
         return view('about', ['page' => $page]);
     }
 
     public function product()
     {
-        $page = $this->getTitleAndImage(3);
+        $page = $this->getTitleAndImage(2);
 
         return view('products', ['page' => $page]);
     }

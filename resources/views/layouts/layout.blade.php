@@ -1,3 +1,4 @@
+<?php use TCG\Voyager\Models\Menu; ?>
 <!doctype html>
 <html lang="{{ config('app.locale') }}">
 <head>
@@ -20,13 +21,13 @@
 
 </head>
 <body>
-<div class="row expanded small-collapse">
-    <div class="small-12 columns" id="column-content">
+<div class="row expanded small-collapse container">
+    <div class="small-12 columns size" id="column-content">
 {{--        @include('partials.nav')--}}
-
-        {{--{{ asset($page->imageMedium->url) }}--}}
+<?= Menu::display('main_menu','partials.nav'); ?>
+{{--        {{ asset($page->imageMedium->url) }}--}}
         <img src="{{ asset($page->imageSmall->url) }} " alt="" class="hero_image show-for-small-only" >
-        <img src="{{ asset($page->imageMedium->url) }} " alt="" class="show-for-large" >
+        <img src="{{ asset($page->imageMedium->url) }} " alt="" class="show-for-large size" >
         <img src="{{ asset($page->imageMedium->url) }} " alt="" class="hero_image show-for-medium-only" >
         <h2 class="hero_text image_top" >@yield('hero_text')</h2>
     </div>

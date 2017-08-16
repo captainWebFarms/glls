@@ -1,0 +1,39 @@
+body {
+    background-color: #1C1B1B;
+    font: Lato;
+    color: #108942;
+}
+
+@media screen and (min-width 64em) {
+    p font-size: 25px;
+    h2 {
+}
+
+font: lato font-colour: #108942 font size: 150px;}
+h2 {
+font: lato font-colour: #108942 font size: 200px;}
+h3 {
+font: lato font-colour: #108942 font size: 65px;}
+p{
+font: lato font-colour: #108942 font size: 26px;}
+
+#footer {
+    #footer .h4 { font: lato font-colour: #108942 font size: 33px;}
+ 
+    #footer p { font: lato font-colour: #108942 font size: 10px;}
+
+}
+    
+
+@media screen and (min-width 40em; max-width 63.9375em) {
+    font-size: 18px;
+}
+
+
+
+
+@media screen and (max-width 39.9375em) {
+    web-font size: 17px;
+}
+
+

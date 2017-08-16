@@ -4,7 +4,8 @@
         <a href="#"><img src="{{ asset('menu.png') }}" style="width:70px;height:60px;"/></a>
         <ul class="submenu menu vertical menu_items" data-submenu>
             {{--{{ $menu }}--}}
-            @foreach($menu as $item)
+
+            @foreach($items as $item)
                 <li><a class="menu_Items"  href="{{$item->url}}">{{$item->title}}</a></li>
             @endforeach
         </ul>

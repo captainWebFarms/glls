@@ -9,17 +9,16 @@ body {
 .menu_items{
     color: #108942;
     font-size: 30px;
+}
+.container {
+    height: auto;
+    width: 100%;
+}
 .size{
 
-    color: #fff;
-    font-size: 30px;
-    display: block;
+
     height:100%;
     width:100%;
-    box-sizing:border-box;
-    overflow: auto;
-}
-
 }
 .gblack {
     background-color: #1C1B1B;
