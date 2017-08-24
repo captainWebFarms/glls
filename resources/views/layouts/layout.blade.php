@@ -1,4 +1,7 @@
-<?php use TCG\Voyager\Models\Menu; ?>
+<?php use TCG\Voyager\Models\Menu;
+
+?>
+
 <!doctype html>
 <html lang="{{ config('app.locale') }}">
 <head>
@@ -12,11 +15,17 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/foundation.css') }}">
     <link rel="stylesheet" href="{{ asset('css/foundationOverride.css') }}">
+    <script src="{{ asset('js/vendor/jquery.js') }}"></script>
+    <link type="text/css" rel="stylesheet" href="{{ asset('css/jquery.qtip.min.css') }}">
+    @yield('style')
+    <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+    {{--<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>--}}
+    <script
+            src="https://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.js"></script>
     {{--<link href="/css/app.css" rel="stylesheet">--}}
-    {{--<!-- Styles -->--}}
-    <style>
 
-    </style>
+    {{--<!-- Styles -->--}}
+
 
 
 </head>
@@ -29,13 +38,14 @@
         <img src="{{ asset($page->imageSmall->url) }} " alt="" class="hero_image show-for-small-only" >
         <img src="{{ asset($page->imageMedium->url) }} " alt="" class="show-for-large size" >
         <img src="{{ asset($page->imageMedium->url) }} " alt="" class="hero_image show-for-medium-only" >
-        <h2 class="hero_text image_top" >@yield('hero_text')</h2>
+        <h2 class="hero_text header_main" >@yield('hero_text')</h2>
+        {{--@yield('contact')--}}
     </div>
 </div>
 @yield('content')
 
 
-<div class="expanded row gblack ggreen">
+<div class="expanded row ggreen footerBlack">
     <div class="small-6 columns ">
         <div class="float-left ">
             <h1>Contact</h1>
@@ -53,17 +63,19 @@
         </div>
     </div>
 </div>
-{{--</div>--}}
 
 
-<script src="{{ asset('js/vendor/jquery.js') }}"></script>
+
 <script src="{{ asset('js/vendor/what-input.js') }}"></script>
 <script src="{{ asset('js/vendor/foundation.js') }}"></script>
 <script src="{{ asset('js/vendor/foundation.interchange.js') }}"></script>
+<script src="{{ asset('js/vendor/foundation.tabs.js') }}"></script>
+<script src="{{ asset('js/vendor/foundation.core.js') }}"></script>
 
 {{--<script src="{{ asset('js/vendor/app.js') }}"></script>--}}
 
 <script> $(document).foundation();</script>
+@yield('scripts')
 
 
 </body>

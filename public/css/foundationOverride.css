@@ -1,60 +1,134 @@
 body {
     font-family: Lato;
+    color: rgb(100, 100, 100);
+}
 
-    color:rgb(100,100,100);
+label {
+    font-family: Lato;
 }
-.dropdown.menu > li.is-dropdown-submenu-parent > a::after {border-color:
-        transparent;
+
+.roundedge {
+    border-radius: 30px;
 }
-.menu_items{
+
+.dropdown.menu > li.is-dropdown-submenu-parent > a::after {
+    border-color: transparent;
+}
+
+.menu_items {
     color: #108942;
     font-size: 30px;
 }
+
 .container {
     height: auto;
     width: 100%;
 }
-.size{
 
-
-    height:100%;
-    width:100%;
+.ggreen {
+    color: #108942;
 }
+
+.side_header {
+    font-size: 45px;
+}
+
+.size {
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
 .gblack {
-    background-color: #1C1B1B;
+    background-color: rgb(16,16,16);
+}
+.footerBlack{
+    background-color: rgb(12,12,12);
 }
 
-.image_top{
-    position:absolute;
-    z-index:2;
-    top:50%;
-    left:50%;
-    text-align:center;
+.header_main {
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    text-align: center;
     transform: translateX(-50%) translateY(-50%);
-
 }
 
 .hero_text {
     color: #108942;
 }
 
-/*Small*/
-@media screen and (max-width: 0em), screen and (min-width: 40em) {
-    .hero_text {
 
+.findDets {
+    background: #0000AA;
+}
+.contact-border {
+    background-color: rgba(255, 255, 255, 0.6);
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+}
+
+
+/*Small*/
+@media screen and (min-width: 0em), screen and (max-width: 40em) {
+    .hero_text {
         font-size: 48px;
     }
+
+    .small_contact {
+        background-color: #1C1B1B;
+    }
+    .image_top {
+        position: relative;
+        text-align: center;
+
+    }
 }
+
 /*medium*/
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
     .hero_text {
-        font-size: 96px;
+        font-size: 75px;
+    }
+
+    .small_contact {
+        background-color: #1C1B1B;
     }
 
 }
+
 /*Large*/
 @media screen and (min-width: 63.9375em) {
     .hero_text {
-        font-size: 157px;
+        font-size: 100px;
     }
+
+    .image_top {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        text-align: center;
+        transform: translateX(-50%) translateY(70%);
+
+    }
+
+    .contact-border {
+        width: 850px;
+    }
+    .small_contact {
+        background-color: transparent;
+    }
+    .padding {
+        -webkit-column-count: 2; /* Chrome, Safari, Opera */
+        -moz-column-count: 2; /* Firefox */
+        column-count: 2;
+        padding: 7%;
+        font-size: 18px;
+    }
+
 }

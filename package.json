@@ -13,10 +13,10 @@
     "axios": "^0.15.3",
     "bootstrap-sass": "^3.3.7",
     "cross-env": "^3.2.4",
-    "foundation-sites": "^6.4.1",
-    "jquery": "^3.1.1",
+    "foundation-sites": "^6.4.3",
+    "jquery": "^3.2.1",
     "laravel-mix": "0.*",
     "lodash": "^4.17.4",
-    "vue": "^2.1.10"
+    "vue": "^2.4.2"
   }
 }

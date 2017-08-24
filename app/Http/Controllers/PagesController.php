@@ -2,8 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Discription;
+use App\News;
 use App\Page;
+use App\Popup;
+use App\Product;
+use App\ProductName;
+use App\ProductRange;
 use App\Text;
+use App\Company;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -12,15 +19,53 @@ class PagesController extends Controller
     {
         return Page::whereId($id)->first();
     }
-    public function getAllText($id){
-        return Text::wherePageId($id)->get();
+
+    public function getAllText($id)
+    {
+        return Text::wherePageId($id)->first();
+    }
+
+    public function getProductRange()
+    {
+        return ProductRange::get();
+    }
+
+    public function getProductName()
+    {
+        return ProductName::get();
+    }
+
+    public function getProductInfo()
+    {
+        return Product::get();
+    }
+
+    public function getDescription()
+    {
+        return Discription::get();
+    }
+    public function getNews(){
+//        $users = DB::table('users')
+//            ->orderBy('name', 'desc')
+//            ->get();
+        return News::orderBy('created_at')->get();
+
+    }
+    public function getPopups(){
+        return Popup::get();
+    }
+    public function getCompanies(){
+        return Company::get();
     }
     public function index()
     {
         $page = $this->getTitleAndImage(1);
         $text = $this->getAllText(1);
+
+        $popup = $this->getPopups();
+        $companies = $this->getCompanies();
 //    return $page;
-        return view('welcome', compact('page', 'text'));
+        return view('welcome', compact('page', 'text', 'popup', 'companies'));
 
     }
 
@@ -34,8 +79,14 @@ class PagesController extends Controller
     public function product()
     {
         $page = $this->getTitleAndImage(2);
+        $text = $this->getAllText(2);
+        $range = $this->getProductRange();
+        $name = $this->getProductName();
+        $product = $this->getProductInfo();
+        $description = $this->getDescription();
+        
 
-        return view('products', ['page' => $page]);
+        return view('products', compact('page', 'text', 'range', 'name', 'product', 'description'));
     }
 
     public function gallery()
@@ -47,15 +98,19 @@ class PagesController extends Controller
 
     public function news()
     {
+        $news = $this->getNews();
         $page = $this->getTitleAndImage(5);
-        return view("news", ['page' => $page]);
+        
+        return view("news", compact('page', 'news'));
     }
 
     public function find()
     {
         $page = $this->getTitleAndImage(6);
+        $popup = $this->getPopups();
+        $companies = $this->getCompanies();
 
-        return view('findDistributor', ['page' => $page]);
+        return view('findDistributor', compact('page', 'popup', 'companies'));
     }
 
     public function login()
@@ -67,14 +122,14 @@ class PagesController extends Controller
 
     public function contact()
     {
-        $page = $this->getTitleAndImage(8);
+        $page = $this->getTitleAndImage(9);
 
         return view('contact', ['page' => $page]);
     }
 
     public function backend()
     {
-        $page = $this->getTitleAndImage(9);
+        $page = $this->getTitleAndImage(8);
 
         return view('distributorsBackend', ['page' => $page]);
     }
