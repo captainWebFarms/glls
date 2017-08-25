@@ -2,6 +2,9 @@ body {
     font-family: Lato;
     color: rgb(100, 100, 100);
 }
+.gblack {
+    background-color: #1C1B1B;
+}
 
 label {
     font-family: Lato;
@@ -131,4 +134,18 @@ label {
         font-size: 18px;
     }
 
+}
+a{
+    color: #108942;
+}
+.slick-image-gallery img{
+    height: 20rem;
+}
+.button.hollow.success{
+    border: 1px solid #108942;
+    color: #108942;
+    font-weight: 700;
+    font-size: 25px;
+    padding-left: 3rem;
+    padding-right: 3rem;
 }

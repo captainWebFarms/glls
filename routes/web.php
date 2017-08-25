@@ -19,7 +19,8 @@ Route::get('/', 'PagesController@index');
 Route::get('/Home', 'PagesController@index');
 Route::get('/About', 'PagesController@about');
 Route::get('/Products', 'PagesController@product');
-Route::get('/Gallery', 'PagesController@gallery');
+//Route::get('/Gallery', 'PagesController@gallery');
+Route::get('/gallery', 'GalleriesController@index');
 Route::get('/News', 'PagesController@news' );
 Route::get('/Find', 'PagesController@find' );
 Route::get('/Login', 'PagesController@login');
@@ -27,6 +28,8 @@ Route::get('/Contact', 'PagesController@contact');
 
 Route::get('/Backend','PagesController@backend');
 Route::get('/Request','PagesController@request');
+Route::get('/gallery/fetchCategoryImages/{id}','GalleriesController@fetchCategoryImages');
+
 
 
 

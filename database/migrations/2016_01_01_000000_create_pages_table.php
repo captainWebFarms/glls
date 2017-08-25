@@ -26,12 +26,6 @@ class CreatePagesTable extends Migration
             $table->text('meta_keywords')->nullable();
             $table->enum('status', Page::$statuses)->default(Page::STATUS_INACTIVE);
             $table->timestamps();
-            $table->integer('image_id')->unsigned()->index();
-            $table->foreign("image_id")->references('id')->on("images");
-            $table->integer('image_medium_id')->unsigned()->index();
-            $table->foreign("image_medium_id")->references('id')->on("images");
-            $table->integer('image_small_id')->unsigned()->index();
-            $table->foreign("image_small_id")->references('id')->on("images");
         });
     }
 
