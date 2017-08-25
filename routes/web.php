@@ -20,6 +20,15 @@ Route::get('/home', 'HomeController@index');
 Route::get('/Contact', 'ContactsController@index');
 //Route::get('/About', 'AboutsController@index');
 //Route::get('/Commercial', 'CommercialsController@index');
-Route::get('/Gallary', 'GallerysController@index');
+Route::get('/gallery', 'GalleriesController@index');
 Route::get('/Investments', 'InvestmentsController@index');
 //Route::post('/Contact', 'ContactsController@mail' );
+Route::get('/gallery/fetchCategoryImages/{id}','GalleriesController@fetchCategoryImages');
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});

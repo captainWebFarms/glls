@@ -5,3 +5,17 @@
     color: #108942;
     font:Lato;
 }
+a{
+    color: #108942;
+}
+.slick-image-gallery img{
+    height: 20rem;
+}
+.button.hollow.success{
+    border: 1px solid #108942;
+    color: #108942;
+    font-weight: 700;
+    font-size: 25px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}

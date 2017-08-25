@@ -1,0 +1,16 @@
+
+<div class="small-12 columns gallery text-center">
+            <slick ref="categorySlick" :options="slickCategoryOptions" class="slick-category-gallery">
+                <button  v-for="(galleryCategory, galleryCategoryIndex) in galleryCategories" v-on:click="selectCategory(galleryCategoryIndex)"><h3>{{ galleryCategory.title }}</h3></button>
+            </slick>
+    <button class="hollow button success" href="#">LEARN MORE</button>
+    <div class="gallery">
+        <h2 >GALLERY</h2>
+    </div>
+    <slick ref="slick" :options="slickOptions" class="slick-category-image">
+        <div v-for="galleryImage in categoryImages"><img :src="'storage/'+galleryImage.url" alt=""></div>
+    </slick>
+    <slick ref="slickAll" :options="slickAllOptions" class="all-gallery-slides">
+        <div v-for="galleryImage in categoryImages"><img :src="'storage/'+galleryImage.url" alt=""></div>
+    </slick>
+</div>

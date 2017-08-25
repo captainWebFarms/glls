@@ -15,3 +15,4 @@ mix.combine([
     'node_modules/jquery/dist/jquery.min.js',
     'node_modules/foundation-sites/dist/js/foundation.min.js'
 ], 'public/js/app.js');
+mix.js('resources/assets/js/vueapp.js', 'public/js');
