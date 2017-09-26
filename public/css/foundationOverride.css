@@ -19,7 +19,7 @@ label {
 }
 
 .menu_items {
-    color: #108942;
+    color: rgb(22, 121, 51);
     font-size: 30px;
 }
 
@@ -29,7 +29,7 @@ label {
 }
 
 .ggreen {
-    color: #108942;
+    color: rgb(22, 121, 51);
 }
 
 .side_header {
@@ -42,7 +42,9 @@ label {
     width: 100%;
     position: relative;
 }
-
+.rangetab{
+    background-color: rgb(12,12,12);
+}
 .gblack {
     background-color: rgb(16,16,16);
 }
@@ -60,7 +62,7 @@ label {
 }
 
 .hero_text {
-    color: #108942;
+    color: rgb(22, 121, 51);
 }
 
 
@@ -74,7 +76,61 @@ label {
     margin-right: auto;
     padding: 15px;
 }
+.tabs-title {
+    float: none !important;
+    display: inline-block;
+}
 
+.tabs-title > a {
+    display: block;
+    padding: 1.25rem 1.5rem;
+    font-size: 2.75rem;
+    line-height: 1;
+    color: rgb(22, 121, 51);
+
+}
+.tabs-title-product > a {
+    display: block;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 0.1;
+    color: white;
+
+}
+.tabs-title-product {
+    padding-top: 1.2rem;
+    padding-left: 1rem;
+
+}
+.tabs-title-range {
+    padding-top: 1.2rem;
+    padding-left: 1rem;
+
+}
+.tabs-title-range > a {
+    display: block;
+    font-size: 1.1rem;
+    text-align: left;
+    line-height: 1;
+    color: rgb(22, 121, 51);
+
+}
+.tabs-title > a:hover {
+    background: none;
+    color: rgb(22, 121, 51);
+}
+
+
+.tabs-title > a:focus, .tabs-title > a[aria-selected='true'] {
+    background: none;
+    color: rgb(22, 121, 51);
+
+}
+
+.tabs {
+    text-align: center;
+    border: none;
+}
 
 /*Small*/
 @media screen and (min-width: 0em), screen and (max-width: 40em) {

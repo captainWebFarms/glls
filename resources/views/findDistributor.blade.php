@@ -133,6 +133,7 @@
         <div id="myModal{{$i}}" class="modal">
             <div id="modal-content" style="background-color:rgb(210,210,210);opacity: 0.8; border-radius: 30px; ">
                 <br/>
+                <p> id = {{$i}}</p>
                 @foreach($popup as $popups)
                     @if($popups->popupId == $i)
                         @foreach($companies as $company)
