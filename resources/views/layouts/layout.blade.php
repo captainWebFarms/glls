@@ -39,9 +39,9 @@
             {{--        @include('partials.nav')--}}
             <?= Menu::display('main_menu','partials.nav'); ?>
             {{--        {{ asset($page->imageMedium->url) }}--}}
-            <img src="{{ asset($page->imageSmall->url) }} " alt="" class="hero_image show-for-small-only" >
-            <img src="{{ asset($page->imageMedium->url) }} " alt="" class="show-for-large size" >
-            <img src="{{ asset($page->imageMedium->url) }} " alt="" class="hero_image show-for-medium-only" >
+            <img src="{{ asset('storage/'.$page->imageSmall->url) }} " alt="" class="hero_image show-for-small-only" >
+            <img src="{{ asset('storage/'.$page->imageMedium->url) }} " alt="" class="show-for-large size" >
+            <img src="{{ asset('storage/'.$page->imageMedium->url) }} " alt="" class="hero_image show-for-medium-only" >
             <h2 class="hero_text header_main" >@yield('hero_text')</h2>
             {{--@yield('contact')--}}
         </div>

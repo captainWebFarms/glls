@@ -13,7 +13,8 @@
     {{ $page->title }}
 @endsection
 @section('content')
-    <div class="row expanded small-collapse gblack ggreen" style="background-color: #0a0a0a; background-image: url('{{ asset('Overlay/FullScreen/Drive Head-CC-Springvale.jpg') }}'); background-size: 100% auto; background-repeat: no-repeat">
+{{--    style="background-color: #0a0a0a; background-image: url('{{ asset('Overlay/FullScreen/Drive Head-CC-Springvale.jpg') }}'); background-size: 100% auto; background-repeat: no-repeat"--}}
+    <div class="row expanded small-collapse gblack ggreen" >
         <div class="small-12 columns text-center main-heading">
             <h1>X‐GLO LED STRIP LIGHTING</h1>
             <p>All with the peace of mind of our uncondi onal 3 year warranty with an expected Life Span of up to 5 Years.</p>

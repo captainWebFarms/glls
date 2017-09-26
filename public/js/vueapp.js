@@ -22408,15 +22408,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             categoryImages: null,
             slickCategoryOptions: {
                 arrows: false,
-                //                    prevArrow: '<a class="slick-prev"><h3> < </h3></a>',
-                //                    nextArrow: '<a class="slick-next"><h3> > </h3></a>',
-                //                    appendArrows: '.slick-category-gallery'
-                //                    appendArrows: '.gallery'
-
                 // Any other options that can be got from plugin documentation
                 centerMode: true,
                 //                    centerPadding: '60px',
-                slidesToShow: 3,
+                slidesToShow: 1,
                 responsive: [{
                     breakpoint: 768,
                     settings: {
