@@ -18,7 +18,7 @@ class GalleriesController extends Controller
     }
 
     public function index(){
-        $page = $this->page->whereId(1)->first();
+        $page = $this->page->whereId(4)->first();
 //        return $page->imageSmall;
         $galleryCategories = $this-> galleryService->getAllCategories();
         foreach ($galleryCategories as $galleryCategory){

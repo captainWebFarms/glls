@@ -17,15 +17,15 @@
                     arrows: false,
                     // Any other options that can be got from plugin documentation
                     centerMode: true,
-//                    centerPadding: '60px',
-                    slidesToShow: 1,
+                    centerPadding: '60px',
+                    slidesToShow: 3,
                     responsive: [
                         {
                             breakpoint: 768,
                             settings: {
                                 arrows: false,
                                 centerMode: true,
-//                                centerPadding: '40px',
+                                centerPadding: '40px',
                                 slidesToShow: 3
                             }
                         },
@@ -35,7 +35,7 @@
                                 arrows: false,
                                 centerMode: true,
 //                                centerPadding: '40px',
-                                slidesToShow: 1
+                                slidesToShow: 3
                             }
                         }
                     ]
@@ -51,6 +51,7 @@
                     centerMode: true,
                     centerPadding: '60px',
                     slidesToShow: 3,
+                    slidesToScroll: 1,
                     responsive: [
                         {
                             breakpoint: 768,

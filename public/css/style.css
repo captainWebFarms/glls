@@ -1,5 +1,5 @@
 .gallery{
-    margin-top: 20rem;
+    /*margin-top: 20rem;*/
     /*background-color: #00acee;*/
 }
 .slick-category-gallery{
@@ -9,7 +9,8 @@
     /*border-right: 2px solid #fff;*/
 }
 .slick-category-gallery .slick-slide{
-    opacity: 0.01;
+    opacity: 0.4;
+    transition: opacity 2s;
     /*display: none;*/
 }
 .slick-category-gallery .slick-active{
@@ -23,15 +24,29 @@
     font-size: 69px;
     font-weight: bold;
     font: Lato;
+    transition: font-size 2s;
 }
 .slick-category-gallery .slick-current h3{
     font-size: 75px;
     font-weight: bold;
     font: Lato;
 }
+.slick-category-image .slick-slide{
+    opacity: 0.01;
+    transition: opacity 2s;
+    /*display: none;*/
+}
+.slick-category-image .slick-active{
+    opacity: 0.3;
+}
+.slick-category-image .slick-current{
+    opacity: 0.9;
+}
 .slick-category-image .slick-slide img{
     height: 400px;
     padding-top: 60px;
+    transition: height 2s;
+    transition: padding-top 2s;
 }
 .slick-category-image .slick-current img{
     height: 480px;
@@ -45,6 +60,10 @@
 .all-gallery-slides .slick-slide img{
     height: 100px;
     padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: height 2s;
+    transition: padding-top 2s;
 }
 .all-gallery-slides .slick-current img{
     padding-top: 0px;
@@ -68,4 +87,10 @@
 .main-heading{
     margin-top: 30rem;
     margin-bottom: 3rem;
+}
+.gallery-header h2 {
+    font-size: 100px;
+    font-weight: bold;
+    font: Lato;
+    /*margin-bottom: 3rem;*/
 }

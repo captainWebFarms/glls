@@ -10,15 +10,20 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}"/>
 @endsection
 @section('hero_text')
-    {{ $page->title }}
+    {{--{{ $page->title }}--}}
 @endsection
 @section('content')
+    <div class="row expanded image_top small-collapse ">
+        <div class="small-12 columns text-center gallery-header">
+            {{--{!! html_entity_decode($page->body) !!}--}}
+        </div>
+    </div>
 {{--    style="background-color: #0a0a0a; background-image: url('{{ asset('Overlay/FullScreen/Drive Head-CC-Springvale.jpg') }}'); background-size: 100% auto; background-repeat: no-repeat"--}}
     <div class="row expanded small-collapse gblack ggreen" >
-        <div class="small-12 columns text-center main-heading">
-            <h1>X‐GLO LED STRIP LIGHTING</h1>
-            <p>All with the peace of mind of our uncondi onal 3 year warranty with an expected Life Span of up to 5 Years.</p>
-        </div>
+        {{--<div class="small-12 columns text-center main-heading">--}}
+            {{--<h1>X‐GLO LED STRIP LIGHTING</h1>--}}
+            {{--<p>All with the peace of mind of our uncondi onal 3 year warranty with an expected Life Span of up to 5 Years.</p>--}}
+        {{--</div>--}}
         <gallery :gallery-categories="{{ $galleryCategories }}" :gallery-images="{{ $galleryImages }}"></gallery>
     </div>
 @endsection

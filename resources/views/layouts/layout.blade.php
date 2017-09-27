@@ -73,9 +73,9 @@
 <script src="{{ asset('js/jquery.min.js') }}"></script>
 <script src="{{ asset('js/vendor/what-input.js') }}"></script>
 <script src="{{ asset('js/vendor/foundation.js') }}"></script>
-<script src="{{ asset('js/vendor/foundation.interchange.js') }}"></script>
-<script src="{{ asset('js/vendor/foundation.tabs.js') }}"></script>
-<script src="{{ asset('js/vendor/foundation.core.js') }}"></script>
+{{--<script src="{{ asset('js/vendor/foundation.interchange.js') }}"></script>--}}
+{{--<script src="{{ asset('js/vendor/foundation.tabs.js') }}"></script>--}}
+{{--<script src="{{ asset('js/vendor/foundation.core.js') }}"></script>--}}
 {{--<script src="{{ asset('js/app.js') }}"></script>--}}
 @yield('scripts')
 <script> $(document).foundation();</script>

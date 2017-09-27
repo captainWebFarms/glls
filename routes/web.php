@@ -29,6 +29,9 @@ Route::get('/Contact', 'PagesController@contact');
 Route::get('/Backend','PagesController@backend');
 Route::get('/Request','PagesController@request');
 Route::get('/gallery/fetchCategoryImages/{id}','GalleriesController@fetchCategoryImages');
+Route::get('/logout', function (){
+    Auth::logout();
+});
 
 
 
@@ -36,3 +39,7 @@ Route::get('/gallery/fetchCategoryImages/{id}','GalleriesController@fetchCategor
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
